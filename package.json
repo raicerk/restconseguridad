@@ -1,0 +1,25 @@
+{
+  "name": "rest-con-login",
+  "version": "1.0.0",
+  "description": "API REST que permite usar sistema de autentificacion basado en token",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raicerk/restconseguridad.git"
+  },
+  "keywords": [
+    "api",
+    "rest",
+    "nodejs",
+    "express"
+  ],
+  "author": "Juan Mora",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/raicerk/restconseguridad/issues"
+  },
+  "homepage": "https://github.com/raicerk/restconseguridad#readme"
+}
