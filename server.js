@@ -40,6 +40,7 @@ router.get('/private',middleware.ensureAuthenticated, function(req, res) {
 app.use(router);
 
 // Iniciamos el servidor y la base de datos
+mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://localhost', function(err) {
     // Comprobar errores siempre
     app.listen(app.get('port'), function(){
