@@ -13,6 +13,7 @@ exports.emailSignup = function(req, res) {
         return res
             .status(200)
             .send({token: service.createToken(user)});
+            //.status(200).jsonp(user);
     });
 };
 

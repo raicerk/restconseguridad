@@ -24,6 +24,10 @@ app.set('port', 3000);
 // Iniciamos las rutas de nuestro servidor/API
 var router = express.Router();
 
+router.get('/', function(req, res) {
+   res.send("Hello World!");
+});
+
 // Rutas de autenticación y login
 router.post('/auth/signup', authCtrl.emailSignup);
 router.post('/auth/login', authCtrl.emailLogin);
@@ -32,6 +36,8 @@ router.post('/auth/login', authCtrl.emailLogin);
 router.get('/private',middleware.ensureAuthenticated, function(req, res) {
     //
 } );
+
+app.use(router);
 
 // Iniciamos el servidor y la base de datos
 mongoose.connect('mongodb://localhost', function(err) {
