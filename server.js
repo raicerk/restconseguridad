@@ -25,7 +25,7 @@ app.set('port', 3000);
 var router = express.Router();
 
 router.get('/', function(req, res) {
-   res.send("Hello World!");
+   res.send("mi app con seguridad");
 });
 
 // Rutas de autenticación y login
